@@ -29,7 +29,7 @@ var closeDescTag = "</button>";
 for (var i=0; i<10; i++) {
     fileNames.push("cat"+(i+1));
     captionName.push("License number:A000" + (i+1));
-    photos.push("<img src='images/" + fileNames[i] + ".jpeg'" + " alt='" + fileNames[i] +"'>");
+    photos.push("<img src='images/" + fileNames[i] + ".jpeg'" + " alt='" + fileNames[i] +"' index=" + i + ">");
     captions.push(openCaptionTag + "<h3>"+ captionName[i] + "</h3>" + closeCaptionTag);
     description=buttons[i] + descText + closeDescTag;
     image = openList + photos[i] + captions[i] + description + closeList;
